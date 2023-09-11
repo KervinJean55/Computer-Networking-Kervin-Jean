@@ -8,7 +8,7 @@ def welcome_assignment_answers(question):
     if question == "Are encoding and encryption the same? - Yes/No":
         answer = "No"
     elif question == "Is it possible to decrypt a message without a key? - Yes/No":
-        answer = "The student should type the answer here"
+        answer = "Yes"
     elif question == "In Slack, what is the secret passphrase posted in the #lab-python-getting-started channel posted by a TA?":
         answer = "pcap"
     elif question == "Are encoding and encryption the same? - Yes/No":
@@ -40,6 +40,8 @@ def welcome_assignment_answers(question):
 if __name__ == "__main__":
     #use this space to debug and verify that the program works
     debug_question = "Are encoding and encryption the same? - Yes/No"
+    print(welcome_assignment_answers(debug_question))
+    debug_question = "In Slack, what is the secret passphrase posted in the #lab-python-getting-started channel posted by a TA?"
     print(welcome_assignment_answers(debug_question))
 
 #Questions:
