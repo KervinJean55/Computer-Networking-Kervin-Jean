@@ -20,7 +20,7 @@ def welcome_assignment_answers(question):
     elif question == "Is a hashed message supposed to be un-hashed? - Yes/No":
         answer = "No"
     elif question == "What is the SHA256 hashing value of your NYU email and use the answer in your code - ":
-        answer == "7ca28d0d2a9aec7fb6521ad125573262c263db116ae8836a873ae2fb3fcea7ea"
+        answer = "7ca28d0d2a9aec7fb6521ad125573262c263db116ae8836a873ae2fb3fcea7ea"
     elif question == "Is MD5 a secured hashing algorithm? - Yes/No":
         answer = "No"
     elif question == "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
@@ -28,17 +28,11 @@ def welcome_assignment_answers(question):
     elif question == "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
         answer = 3
     
-    else:
-        try:
-             
+    else: 
         ### you should understand why this else case should be included
         ### what happens if there is a typo in one of the questions?
         ### maybe put something here to flag an issue and catch errors
-            if question == "Are encoding and encrption the same? - Yes/No":
-                answer = "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
-
-        except Exception:
-            print("There is a typo in one of the questions")
+        answer = "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
     return(answer)
 # Complete all the questions.
 
